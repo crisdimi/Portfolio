@@ -1,14 +1,9 @@
-Select Continent, max(total_deaths) as 'Total Deaths'
-From PortfolioProject..CovidDeaths
-Where continent is NOT NULL
-Group by continent
-Order by 'Total Deaths' DESC
-
+-- Altering Table values 
 ALTER TABLE PortfolioProject..CovidDeaths
 ALTER COLUMN total_cases FLOAT
 
 ALTER TABLE Portfolioproject..CovidDeaths
-ALTER COLUMN pop float
+ALTER COLUMN population float
 
 Update PortfolioProject..CovidDeaths 
 set new_cases = NULL 
